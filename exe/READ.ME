@@ -1,0 +1,26 @@
+The program NEURAL.EXE included here is a 16-bit version compiled with
+Borland C++ version 3.1.  Limitations inherent in real-mode operation restrict
+its utility.  Serious users who have 32-bit machines would do well to
+compile the source code with a 32-bit compiler, producing a protected-mode
+version.  The author uses Symantec C++ version 6.0.
+
+The directory \NEURAL contains the complete source code of the NEURAL
+program.  Parts of this code are listed in the appendix of the book.
+It is particularly important that CONST.H be studied carefully.
+Most of the program's limitations can be found there.  It also contains
+several flags that must be set according to the target machine.  These
+flags are fully documented in that file.
+
+Defaults for learning parameters et cetera are found in the module NEURAL.C
+in that same directory.
+
+The directory \VERIFY contains some .CON control files and .DAT data
+files.  These files can be used to verify correct operation of the NEURAL
+program.  (Note that exact results cannot always be replicated due to the
+fact that many of the program's learning steps are governed by random
+number generators.)  These files are discussed in the last chapter of the
+book.
+
+The directory \MISC contains source code for the principal routines
+listed in the book which are not part of the NEURAL program.
+
